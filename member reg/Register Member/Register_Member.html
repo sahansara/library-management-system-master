@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register Member</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+      form{
+        width: 400px;
+        margin-left: 35%;
+        border: 1px solid black;
+        border-radius: 1em;
+        padding: 15px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Register New Member</h2>
+      <form action="register.php" method="POST" onsubmit="return validateRegisterForm()">
+        <div class="mb-3">
+          <label for="member_id" class="form-label">Member ID:</label>
+          <input type="text" class="form-control" id="member_id" name="reg_member_id" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="fname" class="form-label">First Name:</label>
+          <input type="text" class="form-control" id="fname" name="reg_firstname" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="lname" class="form-label">Last Name:</label>
+          <input type="text" class="form-control" id="lname" name="reg_lastname" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="birthday" class="form-label">Birthday:</label>
+          <input type="text" class="form-control" id="birthday" name="reg_birthday" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="text" class="form-control" id="email" name="reg_email" required />
+        </div>
+
+        <div class="text-center">
+          <input type="submit" class="btn btn-primary" value="Register" />
+        </div>
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+
+  </body>
+</html>

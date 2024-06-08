@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Member</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+      body {
+        background-color: #ffffff; /* Light dark grey color */
+      }
+      .card {
+        border: 1px solid black; /* Black border for the card */
+        border-radius: 15px; /* Rounded corners */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for a lifted effect */
+      }
+      .card-header {
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        font-size: 24px;
+      }
+      .form-control:focus {
+        border-color: #007bff; /* Blue border on focus */
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Blue shadow on focus */
+      }
+      .btn-primary {
+        background-color: #007bff; /* Blue color for the button */
+        border-color: #007bff;
+        border-radius: 10px; /* Rounded corners */
+      }
+      .btn-primary:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        border-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 class="text-center mb-4">Delete Member</h2>
+          <div class="card">
+            <div class="card-body">
+              <form
+                id="deleteMemberForm"
+                action="delete_member.php"
+                method="post"
+                onsubmit="return confirmDelete()"
+              >
+                <div class="form-group">
+                  <label for="memberId">Member ID</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="memberId"
+                    name="memberId"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mt-3">
+                  Delete
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

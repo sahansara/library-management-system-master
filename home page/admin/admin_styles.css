@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+  top: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.admin-logo {
+  display: flex;
+  align-items: center;
+  background-color: #007bff;
+  border-radius: 15px;
+  width: 250px;
+  padding-left: 10px;
+}
+
+.admin-logo img {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+/* Admin Section Styles */
+.admin-section {
+  padding: 80px 20px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.admin-section h2 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.admin-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.admin-btn {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.admin-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .admin-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .admin-nav ul li {
+    width: 100%;
+    margin: 0;
+  }
+
+  .admin-nav ul li a {
+    width: 100%;
+    text-align: left;
+  }
+
+  .admin-section {
+    padding: 60px 10px;
+  }
+
+  .admin-section h2 {
+    font-size: 2em;
+  }
+
+  .admin-section p {
+    font-size: 1.1em;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.admin-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.admin-section {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.admin-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.admin-section p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.admin-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.admin-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-container {
+    grid-template-columns: 1fr;
+  }
+}

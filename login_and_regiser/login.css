@@ -1,0 +1,236 @@
+/*backup page color */
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 50px;
+}
+.box {
+    width: 500px;
+	height:550px;
+	background: linear-gradient(to top,rgba(0, 0, 0, 0.8)50%,rgba(0, 0, 0, 0.8)50%);
+	text-align:left;
+	font-family: sans-serif;
+	color: #bbdeff;
+    border-radius: 10px;
+	padding: 25px;
+    margin :auto;
+	
+    
+}
+
+#login-body {
+    background-color: hsl(200, 100%, 96%);
+    background: linear-gradient(to top, hsla(0, 0%, 2%, 0.396)20%,rgba(0, 0, 0, 0.5)0%), url(Library.jpg);
+    background-position: center;
+	background-size: cover;
+}
+
+#login-container {
+    margin-top: 100px;
+}
+
+.hid{
+    
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 22px;
+	
+	border-radius: 10px;
+
+	margin: 2px;
+	padding: 8px;
+  
+    background-color:  #ff7f50;
+    color: #ffffff;
+}
+ /*for all button */ 
+.btn{
+	width: 240px;
+	height: 40px;
+	border: none;
+	background-color:  #ff7f50;
+	font-size: 18px;
+	margin-top:40px;
+    margin-left: 95px;
+	border-radius: 10px;
+	cursor: pointer;
+	color: white;
+	transition: 0.4s ease;
+     
+
+}
+.btn a{
+	text-decoration: none;
+	color: black;
+	transition: 0.3s ease;
+
+}
+.btn:hover{
+	background-color: white;
+}
+
+
+.box input{
+	width: 400px;
+	height: 40px;
+	background: transparent;
+	border-bottom: 2px solid  #ff7f50;
+	border-top: none;
+	border-left: none;
+	color: white;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	font-family: sans-serif;
+	margin-left: 15px;
+}
+
+.box input :focus{
+	outline: none;
+}
+
+.link{
+	text-align: center;
+	
+	font-family: sans-serif;
+    color: #fffdfd;
+}
+.link a{
+	text-decoration: none;
+	color:  hsla(211, 93%, 58%, 0.761);
+	border-top: none;
+}
+.link a:hover{
+	background-color: rgb(168, 204, 238);
+}
+
+.paragrph{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: center;
+    color: #bbdeff;
+	margin-top:2%;
+} 
+
+.h_admin{
+	
+    
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 22px;
+
+    color: #bbdeff;
+}
+
+/* for all errors handlin  part */
+
+.mistake_error {
+
+	width: 400px;
+	height: 30px;
+	border: none;
+	background-color: hsla(0, 92%, 41%, 0.682);
+	font-size: 18px;
+    margin-top: 60px;
+	margin-left:20px;
+	border-radius: 10px;
+	cursor: pointer;
+	color: rgb(1, 1, 1);
+	transition: 0.4s ease;
+	text-align: center;
+
+}  
+.mistake_error:hover{
+	background-color: white;
+}
+/* this use for database table css code */
+.table {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 30px;
+
+}
+.table td, .table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+  }
+
+  .table tr:nth-child(odd) {
+    background-color: #fff6f6;
+	color: rgb(0, 0, 0);
+}
+
+.table tr:nth-child(even) {
+    background-color:  #fff6f6;
+	color:  rgb(0, 0, 0);
+}
+
+.table tr:hover {
+    background-color: #e3997ed8
+}
+  .table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color:   #fa9f62;
+	color: white;
+  }
+
+  /* Navigation Bar Styles */
+nav {
+	background-color: #f1f1f1e2;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	border-radius: 10px;
+	display: flex;
+	
+	align-items: center;
+	padding: 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+  }
+  
+  nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+  }
+  
+  nav ul li {
+	display: inline;
+	margin-left: 20px;
+	margin-right: 15px;
+  }
+  
+  nav ul li a {
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: large;
+	transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav img {
+	width: 80px;
+	border-radius: 90%;
+  }
+  
+  .logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+  }
+  
+  nav a:hover {
+	border-radius: 50px;
+	background: linear-gradient(to right, #ff6347, #ff7f50); /* Gradient colors */
+	color: #fff;
+  }
+  

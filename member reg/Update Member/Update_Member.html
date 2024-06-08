@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Update Member</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+      form{
+        width: 400px;
+        margin-left: 35%;
+        border: 1px solid black;
+        border-radius: 1em;
+        padding: 15px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Update Member</h2>
+      <form action="update.php" method="POST" onsubmit="return validateUpdateForm()">
+        <div class="mb-3">
+          <label for="member_id" class="form-label">Member ID:</label>
+          <input type="text" class="form-control" id="member_id" name="update_member_id" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="firstname" class="form-label">First Name:</label>
+          <input type="text" class="form-control" id="firstname" name="update_firstname" />
+        </div>
+
+        <div class="mb-3">
+          <label for="lastname" class="form-label">Last Name:</label>
+          <input type="text" class="form-control" id="lastname" name="update_lastname" />
+        </div>
+
+        <div class="mb-3">
+          <label for="birthday" class="form-label">Birthday:</label>
+          <input type="text" class="form-control" id="birthday" name="update_birthday" />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="text" class="form-control" id="email" name="update_email" />
+        </div>
+
+        <div class="text-center">
+          <input type="submit" class="btn btn-primary" value="Update" />
+        </div>
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+
+  </body>
+</html>
